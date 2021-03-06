@@ -1,0 +1,71 @@
+:root {
+    --purple: #3e0244;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--purple);
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container1 {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#play-area {
+    display: inline-grid;
+    grid-gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    background-color: pink;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.block {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--purple); 
+    background: rgb(149, 190, 238)
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--purple);
+    color: white;
+    border-color: Var(--purple);
+    font-size: 18px;
+    transition: 200ms transform;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
