@@ -33,7 +33,7 @@ function handleCellClick(event) {
             document.getElementById('winner').innerHTML = `${winner} is the WINNER!!!`
         }
     })
-    if (winner == "" && !gameState.includes("")) {
+    if (winner === "" && !gameState.includes("")) {
         gameOn = false;
         document.getElementById('winner').innerHTML = "This Game is Draw"
     }
@@ -65,6 +65,7 @@ function gameReset() {
         "","","",
     ]
     document.getElementById('winner').innerHTML = ""
+    winner = ""
     currentPlayer = "X"
 }
 
